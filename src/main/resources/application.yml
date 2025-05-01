@@ -4,8 +4,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spring_boot?useTimezone=true&serverTimezone=UTC
-    username: root
-    password: password123
+    username: admin
+    password: admin123
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,3 +13,7 @@ spring:
         hibernate:
       show-sql: false
     open-in-view: false
+logging:
+  level:
+    root: INFO
+    br.com.marlonhenrique7: INFO

@@ -15,6 +15,7 @@
 
     <properties>
         <java.version>21</java.version>
+        <dozer.version>7.0.0</dozer.version>
     </properties>
 
     <dependencies>
@@ -35,6 +36,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.github.dozermapper</groupId>
+            <artifactId>dozer-core</artifactId>
+            <version>${dozer.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -46,6 +53,8 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+
+
     </dependencies>
 
     <build>
